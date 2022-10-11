@@ -1,0 +1,96 @@
+Windows DLL Injection Proof Of Concept
+==================================================================================================================
+#include <windows.h>
+#include <stdio.h>
+#include <tchar.h>
+
+#define DLL_NAME "C:\\Windows\\System32\\kernel32.dll"
+
+int _tmain(int argc, TCHAR *argv[])
+{
+	STARTUPINFO si;
+	PROCESS_INFORMATION pi;
+	HANDLE hProcess;
+	HANDLE hThread;
+	HMODULE hModule;
+	DWORD dwThreadId;
+	DWORD dwExitCode;
+
+	ZeroMemory(&si, sizeof(si));
+	si.cb = sizeof(si);
+
+	if (!CreateProcess(NULL,
+		DLL_NAME,
+		NULL,
+		NULL,
+		FALSE,
+		CREATE_SUSPENDED,
+		NULL,
+		NULL,
+		&si,
+		&pi))
+	{
+		printf("CreateProcess failed (%d)\n", GetLastError());
+		return 1;
+	}
+
+	hProcess = pi.hProcess;
+	hThread = pi.hThread;
+
+	hModule = LoadLibrary(DLL_NAME);
+	if (hModule == NULL)
+	{
+		printf("LoadLibrary failed (%d)\n", GetLastError());
+		return 1;
+	}
+
+	hThread = CreateRemoteThread(hProcess,
+		NULL,
+		0,
+		(LPTHREAD_START_ROUTINE)GetProcAddress(hModule, "Sleep"),
+		NULL,
+		0,
+		&dwThreadId);
+	if (hThread == NULL)
+	{
+		printf("CreateRemoteThread failed (%d)\n", GetLastError());
+		return 1;
+	}
+
+	WaitForSingleObject(hThread, INFINITE);
+	GetExitCodeThread(hThread, &dwExitCode);
+	printf("Thread exit code: %d\n", dwExitCode);
+
+	CloseHandle(hThread);
+	CloseHandle(hProcess);
+
+	return 0;
+}
+
+=============================================================================================================================
+// The method above is for skids, therefore we will reduce it further in size and give our program better stability.
+=============================================================================================================================
+
+<windows.h>
+
+BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
+{
+    switch (fdwReason)
+    {
+        case DLL_PROCESS_ATTACH:
+            LoadLibraryW(L"C:\\Users\\user\\Desktop\\test.dll");
+            break;
+
+            case DLL_THREAD_ATTACH:
+            case DLL_THREAD_DETACH:
+            case DLL_PROCESS_DETACH:
+        
+            break;    
+
+    }
+    return TRUE;
+}
+===============================================================================================================================
+// Do not use for ill intent.
+// Use at your own risk I am not responsible for what you do with this this is for educational research only.
+===============================================================================================================================
