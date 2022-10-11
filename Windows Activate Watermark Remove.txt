@@ -1,0 +1,7 @@
+Summary : This will remove the activate windows watermark without having to have a product key and only using the command line from command prompt.
+
+1. Go to start menu on windows
+2. Type CMD and right click then click run as administrator
+3. Now go to the command prompt and type this "bcdedit -set TESTSIGNING OFF"
+4. Press enter and you should see a message pop up saying The operation completed successfully
+5. Now restart your pc and it should be gone if you have any problems let me know
