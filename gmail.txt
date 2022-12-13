@@ -1,0 +1,79 @@
+curl -i -v -n --ssl-reqd --url smtps://smtp.gmail.com:465
+* Rebuilt URL to: smtps://smtp.gmail.com:465/
+* Couldn't find host smtp.gmail.com in the _netrc file; using defaults
+*   Trying 173.194.209.109...
+* TCP_NODELAY set
+* Connected to smtp.gmail.com (173.194.209.109) port 465 (#0)
+* schannel: SSL/TLS connection with smtp.gmail.com port 465 (step 1/3)
+* schannel: checking server certificate revocation
+* schannel: sending initial handshake data: sending 179 bytes...
+* schannel: sent initial handshake data: sent 179 bytes
+* schannel: SSL/TLS connection with smtp.gmail.com port 465 (step 2/3)
+* schannel: failed to receive handshake, need more data
+* schannel: SSL/TLS connection with smtp.gmail.com port 465 (step 2/3)
+* schannel: encrypted data got 4096
+* schannel: encrypted data buffer: offset 4096 length 4096
+* schannel: encrypted data length: 28
+* schannel: encrypted data buffer: offset 28 length 4096
+* schannel: received incomplete message, need more data
+* schannel: SSL/TLS connection with smtp.gmail.com port 465 (step 2/3)
+* schannel: encrypted data got 101
+* schannel: encrypted data buffer: offset 129 length 4096
+* schannel: sending next handshake data: sending 93 bytes...
+* schannel: SSL/TLS connection with smtp.gmail.com port 465 (step 2/3)
+* schannel: encrypted data got 295
+* schannel: encrypted data buffer: offset 295 length 4096
+* schannel: SSL/TLS handshake complete
+* schannel: SSL/TLS connection with smtp.gmail.com port 465 (step 3/3)
+* schannel: stored credential handle in session cache
+* schannel: client wants to read 102400 bytes
+* schannel: encdata_buffer resized 103424
+* schannel: encrypted data buffer: offset 0 length 103424
+* schannel: encrypted data got 115
+* schannel: encrypted data buffer: offset 115 length 103424
+* schannel: decrypted data length: 86
+* schannel: decrypted data added: 86
+* schannel: decrypted data cached: offset 86 length 102400
+* schannel: encrypted data buffer: offset 0 length 103424
+* schannel: decrypted data buffer: offset 86 length 102400
+* schannel: schannel_recv cleanup
+* schannel: decrypted data returned 86
+* schannel: decrypted data buffer: offset 0 length 102400
+< 220 smtp.gmail.com ESMTP r18-20020a05620a299200b006fed2788751sm8552704qkp.76 - gsmtp
+> EHLO Dicks
+* schannel: client wants to read 102400 bytes
+* schannel: encrypted data buffer: offset 0 length 103424
+* schannel: encrypted data got 252
+* schannel: encrypted data buffer: offset 252 length 103424
+* schannel: decrypted data length: 223
+* schannel: decrypted data added: 223
+* schannel: decrypted data cached: offset 223 length 102400
+* schannel: encrypted data buffer: offset 0 length 103424
+* schannel: decrypted data buffer: offset 223 length 102400
+* schannel: schannel_recv cleanup
+* schannel: decrypted data returned 223
+* schannel: decrypted data buffer: offset 0 length 102400
+< 250-smtp.gmail.com at your service, [174.215.178.53]
+< 250-SIZE 35882577
+< 250-8BITMIME
+< 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+< 250-ENHANCEDSTATUSCODES
+< 250-PIPELINING
+< 250-CHUNKING
+< 250 SMTPUTF8
+> HELP
+* schannel: client wants to read 102400 bytes
+* schannel: encrypted data buffer: offset 0 length 103424
+* schannel: encrypted data got 147
+* schannel: encrypted data buffer: offset 147 length 103424
+* schannel: decrypted data length: 118
+* schannel: decrypted data added: 118
+* schannel: decrypted data cached: offset 118 length 102400
+* schannel: encrypted data buffer: offset 0 length 103424
+* schannel: decrypted data buffer: offset 118 length 102400
+* schannel: schannel_recv cleanup
+* schannel: decrypted data returned 118
+* schannel: decrypted data buffer: offset 0 length 102400
+< 214 2.0.0  https://www.google.com/search?btnI&q=RFC+5321 r18-20020a05620a299200b006fed2788751sm8552704qkp.76 - gsmtp
+214 2.0.0  https://www.google.com/search?btnI&q=RFC+5321 r18-20020a05620a299200b006fed2788751sm8552704qkp.76 - gsmtp
+* Connection #0 to host smtp.gmail.com left intact
