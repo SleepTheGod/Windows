@@ -1,0 +1,44 @@
+C:\Windows\system32>wlanhelper
+WlanHelper for Npcap 1.50 ( http://npcap.org )
+Usage: WlanHelper [Commands]
+   or: WlanHelper {Interface Name or GUID} [Options]
+
+OPTIONS:
+  mode                                  : Get interface operation mode
+  mode <managed|monitor|master|..>      : Set interface operation mode
+  modes                                 : Get all operation modes supported by the interface, comma-separated
+  channel                               : Get interface channel
+  channel <1-14>                        : Set interface channel (only works in monitor mode)
+  freq                                  : Get interface frequency
+  freq <VALUE>                          : Set interface frequency (only works in monitor mode)
+  modu                                  : Get interface modulation
+  modu <dsss|fhss|irbaseband|ofdm|hrdsss|erp|ht|vht|ihv (VALUE)|..>     : Set interface modulation
+  modus                                 : Get all modulations supported by the interface, comma-separated
+
+COMMANDS:
+  -i                                    : Enter the interactive mode
+  -h                                    : Print this help summary page
+
+OPERATION MODES:
+  managed       : The Extensible Station (ExtSTA) operation mode
+  monitor       : The Network Monitor (NetMon) operation mode
+  master        : The Extensible Access Point (ExtAP) operation mode (supported from Windows 7 and later)
+  wfd_device    : The Wi-Fi Direct Device operation mode (supported from Windows 8 and later)
+  wfd_owner     : The Wi-Fi Direct Group Owner operation mode (supported from Windows 8 and later)
+  wfd_client    : The Wi-Fi Direct Client operation mode (supported from Windows 8 and later)
+
+802.11 MODULATIONS (https://en.wikipedia.org/wiki/IEEE_802.11):
+  802.11-1997   : dsss, fhss
+  802.11a       : ofdm
+  802.11b       : dsss
+  802.11g       : ofdm
+  802.11n       : mimo-ofdm
+  802.11ac      : mimo-ofdm
+
+EXAMPLES:
+  WlanHelper Wi-Fi mode
+  WlanHelper 42dfd47a-2764-43ac-b58e-3df569c447da channel 11
+  WlanHelper 42dfd47a-2764-43ac-b58e-3df569c447da freq 2
+  WlanHelper "Wireless Network Connection" mode monitor
+
+SEE THE MAN PAGE (https://github.com/nmap/npcap) FOR MORE OPTIONS AND EXAMPLES
