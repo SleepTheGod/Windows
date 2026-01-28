@@ -1,0 +1,278 @@
+Complete List of Settings URI
+Category	Operating System	Settings page	URI Command
+Windows 10, 11	Settings home page	ms-settings:
+System			
+Windows 10, 11	Display	ms-settings:display
+Windows 10, 11	Night light settings	ms-settings:nightlightms-settings:batterysaver
+(Devices with battery only)
+Windows 10, 11	Advanced scaling settings	ms-settings:display-advanced
+(Only on supported devices)
+Windows 10, 11	Connect to a wireless display	ms-settings-connectabledevices:devicediscovery
+Windows 10, 11	Graphics settings	ms-settings:display-advancedgraphics
+Windows 10, 11	Sound	ms-settings:sound
+Windows 10, 11	Manage sound devices	ms-settings:sound-devices
+Windows 10, 11	App volume and device preferences	ms-settings:apps-volume
+Windows 10, 11	Notifications & actions	ms-settings:notifications
+Windows 10, 11	Focus assist	ms-settings:quiethours
+or
+ms-settings:quietmomentshome
+Windows 10, 11	During these hours	ms-settings:quietmomentsscheduled
+Windows 10, 11	Duplicating my display	ms-settings:quietmomentspresentation
+(When duplicating display)
+Windows 10, 11	Playing a game full screen	ms-settings:quietmomentsgame
+(When playing a game)
+Windows 10, 11	Power & sleep	ms-settings:powersleep
+Windows 10, 11	Battery	ms-settings:batterysaver
+(Devices with battery only)
+Windows 10, 11	See which apps are affecting your battery life	ms-settings:batterysaver-usagedetails
+(Devices with battery only)
+Windows 10, 11	Battery Saver settings	ms-settings:batterysaver-settings
+(Devices with battery only)
+Windows 10, 11	Storage	ms-settings:storagesense
+Windows 10, 11	Configure Storage Sense or run it now	ms-settings:storagepolicies
+Windows 10, 11	Change where new content is saved	ms-settings:savelocations
+Windows 10	Tablet	ms-settings:tabletmode
+Windows 10, 11	Multitasking	ms-settings:multitasking
+Windows 10, 11	Projecting to this PC	ms-settings:project
+Windows 10, 11	Shared experiences	ms-settings:crossdevice
+Windows 10, 11	Clipboard (build 17666)	ms-settings:clipboard
+Windows 10, 11	Remote Desktop	ms-settings:remotedesktop
+Windows 10, 11	Device Encryption (if available)	ms-settings:deviceencryption
+Windows 10, 11	About	ms-settings:about
+Devices/ Bluetooth and Devices			
+Windows 10, 11	Bluetooth & other devices	ms-settings:bluetooth
+or
+ms-settings:connecteddevices
+Windows 10, 11	Printers & scanners	ms-settings:printers
+Windows 10, 11	Mouse	ms-settings:mousetouchpad
+Windows 10, 11	Touchpad	ms-settings:devices-touchpad
+(Devices with touchpad only)
+Windows 10, 11	Typing	ms-settings:typing
+Windows 10, 11	Hardware keyboard – Text suggestions	ms-settings:devicestyping-hwkbtextsuggestions
+Windows 10	Wheel	ms-settings:wheel
+(Only available if Dial is paired)Windows 10, 11Pen & Windows Inkms-settings:penWindows 10, 11AutoPlayms-settings:autoplayWindows 10, 11USBms-settings:usbWindows 10 v1803 and beforeDefault Camerams-settings:cameraWindows 11Your Phonems-settings:mobile-devicesPhone (Windows 10 Only)Windows 10 v1803 and beforePhone/ Your Phone (Windows 11)ms-settings:mobile-devicesWindows 10 v1803 and beforeAdd a phone/ Your Phone (Windows 11)ms-settings:mobile-devices-addphoneWindows 10 v1803 and beforeYour Phone (opens app)/ Your Phone (Windows 11)ms-settings:mobile-devices-addphone-directNetwork & Internetms-settings:networkWindows 10, 11Statusms-settings:network-statusWindows 10, 11Data usagems-settings:datausageWindows 10, 11Show available networksms-availablenetworks:Windows 10, 11Cellular & SIMms-settings:network-cellularWindows 10, 11Wi-Fims-settings:network-wifi
+(Only if Wi-Fi adapter is available)
+Windows 10, 11	Show available networks	ms-availablenetworks:
+Windows 10, 11	Manage known networks	ms-settings:network-wifisettings
+Windows 10, 11	Wi-Fi Calling	ms-settings:network-wificalling
+Windows 10, 11	Ethernet	ms-settings:network-ethernet
+Windows 10, 11	Dial-up	ms-settings:network-dialup
+Windows 10, 11	DirectAccess	ms-settings:network-directaccess
+(Only if DirectAccess is enabled)
+Windows 10, 11	VPN	ms-settings:network-vpn
+Windows 10, 11	Airplane mode	ms-settings:network-airplanemode
+or
+ms-settings:proximity
+Windows 10, 11	Mobile hotspot	ms-settings:network-mobilehotspot
+Windows 10, 11	NFC	ms-settings:nfctransactions
+(If device supports)
+Windows 10, 11	Proxy	ms-settings:network-proxy
+Personalization			ms-settings:personalization
+Windows 10, 11	Background	ms-settings:personalization-background
+Windows 10, 11	Colors	ms-settings:personalization-colors
+or
+ms-settings:colors
+Windows 10, 11	Lock screen	ms-settings:lockscreen
+Windows 10, 11	Themes	ms-settings:themes
+Windows 10, 11	Fonts	ms-settings:fonts
+Windows 10, 11	Start	ms-settings:personalization-start
+Windows 10, 11	Choose which folders appear on Start	ms-settings:personalization-start-places
+Windows 10, 11	Taskbar	ms-settings:taskbar
+Windows 10 v1803 and before	Glance	ms-settings:personalization-glance
+Windows 10 v1803 and before	Navigation bar	ms-settings:personalization-navbar
+Apps			
+Windows 10, 11	Apps & features	ms-settings:appsfeatures
+Windows 10, 11	Manage optional features	ms-settings:optionalfeatures
+Windows 10, 11	Default apps	ms-settings:defaultapps
+Windows 10, 11	Offline maps	ms-settings:maps
+Windows 10, 11	Download maps	ms-settings:maps-downloadmaps
+Windows 10, 11	Apps for websites	ms-settings:appsforwebsites
+Windows 10, 11	Video playback (build 16215)	ms-settings:videoplayback
+Windows 10, 11	Startup	ms-settings:startupapps
+Accounts			
+Windows 10, 11	Your info	ms-settings:yourinfo
+Windows 10, 11	Email & accounts	ms-settings:emailandaccounts
+Windows 10, 11	Sign-in options	ms-settings:signinoptions
+Windows 10, 11	Windows Hello face setup	ms-settings:signinoptions-launchfaceenrollment
+Windows 10, 11	Windows Hello fingerprint setup	ms-settings:signinoptions-launchfingerprintenrollment
+Windows 10, 11	Security Key setup	ms-settings:signinoptions-launchsecuritykeyenrollment
+Windows 10, 11	Dynamic Lock	ms-settings:signinoptions-dynamiclock
+Windows 10, 11	Access work or school	ms-settings:workplace
+Windows 10, 11	Family & other users	ms-settings:otherusers
+Windows 10, 11	Family Group	ms-settings:family-group
+Windows 10, 11	Set up a kiosk	ms-settings:assignedaccess
+Windows 10, 11	Sync your settings/ Windows Backup (Windows 11)	ms-settings:sync
+Time & Language			
+Windows 10, 11	Date & time	ms-settings:dateandtime
+Windows 10, 11	Region	
+Windows 10, 11	Japan IME settings	ms-settings:regionlanguage-jpnime
+(If Microsoft Japan IME is installed)
+Windows 10, 11	Pinyin IME settings	ms-settings:regionlanguage-chsime-pinyin
+(If Microsoft Pinyin IME is installed)
+Windows 10, 11	Wubi IME settings	ms-settings:regionlanguage-chsime-wubi
+(If Microsoft Wubi IME is installed)
+Windows 10, 11	Language	ms-settings:regionlanguage
+Windows 10, 11	Windows display language	ms-settings:regionlanguage-setdisplaylanguage
+Windows 10, 11	Add Display language	ms-settings:regionlanguage-adddisplaylanguage
+Windows 10, 11	Speech	ms-settings:speech
+Gaming			
+Windows 10, 11	Xbox Game bar	ms-settings:gaming-gamebar
+Windows 10, 11	Captures	ms-settings:gaming-gamedvr
+Windows 10, 11	Game Mode	ms-settings:gaming-gamemode
+Windows 10 v1803 and before	TruePlay	ms-settings:gaming-trueplay
+Ease of Access			
+Windows 10, 11	Display	ms-settings:easeofaccess-display
+Windows 10	Mouse pointer	ms-settings:easeofaccess-cursorandpointersize
+OR
+ms-settings:easeofaccess-MousePointer
+Windows 10, 11	Text cursor	ms-settings:easeofaccess-cursor
+Windows 10, 11	Magnifier	ms-settings:easeofaccess-magnifier
+Windows 10, 11	Color Filters	ms-settings:easeofaccess-colorfilter
+Windows 10, 11	High Contrast	ms-settings:easeofaccess-highcontrast
+Windows 10, 11	Narrator	ms-settings:easeofaccess-narrator
+Windows 10, 11	Start Narrator after sign-in for me	ms-settings:easeofaccess-narrator-isautostartenabled
+Windows 10, 11	Audio	ms-settings:easeofaccess-audio
+Windows 10, 11	Closed captions	ms-settings:easeofaccess-closedcaptioning
+Windows 10, 11	Speech	ms-settings:easeofaccess-speechrecognition
+Windows 10, 11	Keyboard	ms-settings:easeofaccess-keyboard
+Windows 10, 11	Mouse	ms-settings:easeofaccess-mouse
+Windows 10, 11	Eye Control	ms-settings:easeofaccess-eyecontrol
+Windows 11	Visual Effects	ms-settings:easeofaccess-visualeffects
+Privacy/Privacy and Security			ms-settings:privacy
+Windows 10 v1803 and before	Accessory apps	ms-settings:privacy-accessoryapps
+Windows 10 v1803 and before	Advertising ID	ms-settings:privacy-advertisingid
+Windows 10, 11	General	ms-settings:privacy
+Windows 10, 11	Speech	ms-settings:privacy-speech
+Windows 10, 11	Inking & typing personalization	ms-settings:privacy-speechtyping
+Windows 10, 11	Diagnostics & feedback	ms-settings:privacy-feedback
+Windows 10, 11	View diagnostic data	ms-settings:privacy-feedback-telemetryviewergroup
+Windows 10, 11	Activity history	ms-settings:privacy-activityhistory
+Windows 10, 11	Location	ms-settings:privacy-location
+Windows 10, 11	Camera	ms-settings:privacy-webcam
+Windows 10, 11	Microphone	ms-settings:privacy-microphone
+Windows 10, 11	Voice activation	ms-settings:privacy-voiceactivation
+Windows 10, 11	Notifications	ms-settings:privacy-notifications
+Windows 10, 11	Account info	ms-settings:privacy-accountinfo
+Windows 10, 11	Contacts	ms-settings:privacy-contacts
+Windows 10, 11	Calendar	ms-settings:privacy-calendar
+Windows 10, 11	Phone calls	ms-settings:privacy-phonecalls
+Windows 10, 11	Call history	ms-settings:privacy-callhistory
+Windows 10, 11	Email	ms-settings:privacy-email
+Windows 10, 11	Eye tracker	ms-settings:privacy-eyetracker
+(Requires eyetracker hardware)
+Windows 10, 11	Tasks	ms-settings:privacy-tasks
+Windows 10, 11	Messaging	ms-settings:privacy-messaging
+Windows 10, 11	Radios	ms-settings:privacy-radios
+Windows 10, 11	Other devices	ms-settings:privacy-customdevices
+Windows 10, 11	Background apps	ms-settings:privacy-backgroundapps
+Windows 10, 11	App diagnostics	ms-settings:privacy-appdiagnostics
+Windows 10, 11	Automatic file downloads	ms-settings:privacy-automaticfiledownloads
+Windows 10, 11	Documents	ms-settings:privacy-documents
+Windows 10, 11	Downloads folder	ms-settings:privacy-downloadsfolder
+Windows 10, 11	Pictures	ms-settings:privacy-pictures
+Windows 10, 11	Videos	ms-settings:privacy-documents
+Windows 10, 11	File system	ms-settings:privacy-broadfilesystemaccess
+Update & Security/ Windows Update			ms-settings:windowsupdate
+Windows 10, 11	Windows Update	ms-settings:windowsupdate
+Windows 10, 11	Check for updates	ms-settings:windowsupdate-action
+Windows 10, 11	View optional updates	ms-settings:windowsupdate-optionalupdates
+Windows 10, 11	Change active hours	ms-settings:windowsupdate-activehours
+Windows 10, 11	View update history	ms-settings:windowsupdate-history
+Windows 10, 11	Restart options	ms-settings:windowsupdate-restartoptions
+Windows 10, 11	Advanced options	ms-settings:windowsupdate-options
+Windows 10, 11	Delivery Optimization	ms-settings:delivery-optimization
+Windows 10, 11	Windows Security	ms-settings:windowsdefender
+Windows 10, 11	Open Windows Security	windowsdefender:
+Windows 10, 11	Backup	ms-settings:backup
+Windows 10, 11	Troubleshoot	ms-settings:troubleshoot
+Windows 10, 11	Recovery	ms-settings:recovery
+Windows 10, 11	Activation	ms-settings:activation
+Windows 10, 11	Find My Device	ms-settings:findmydevice
+Windows 10, 11	For developers	ms-settings:developers
+Windows 10, 11	Windows Insider Program	ms-settings:windowsinsider
+or
+ms-settings:windowsinsider-optin
+(Only if enrolled)
+Mixed Reality (If app is installed)			ms-settings:holographic
+Windows 10, 11	Audio and speech	ms-settings:holographic-audio
+Windows 10, 11	Environment	ms-settings:privacy-holographic-environment
+Windows 10, 11	Headset display	ms-settings:holographic-headset
+Windows 10, 11	Uninstall	ms-settings:holographic-management
+Surface Hub (If you have a Surface device)			
+Windows 10, 11	Accounts	ms-settings:surfacehub-accounts
+Windows 10, 11	Team Conferencing	ms-settings:surfacehub-calling
+Windows 10, 11	Team device management	ms-settings:surfacehub-devicemanagenent
+Windows 10, 11	Session cleanup	ms-settings:surfacehub-sessioncleanup
+Windows 10, 11	Welcome screen	ms-settings:surfacehub-welcome
+Complete list of Windows Settings URIs
+List of Windows URI Commands for Microsoft Store
+You can also perform certain actions from the command line relating to the Microsoft Store app. Here are the details:
+
+
+Microsoft Store page	URI Command
+Home	ms-windows-store://home
+Top-level verticle	ms-windows-store://navigatetopage/?Id=[vertical]
+Downloads and updates	ms-windows-store://downloadsandupdates
+Store settings	ms-windows-store://settings
+List of Microsoft Store URI commands
+List of Windows URI Commands for Windows Apps
+Below is a list of URI commands you can use to launch specific Windows applications. Of course, the apps need to be installed in order for these to work:
+
+App	URI Command
+3D Builder	com.microsoft.builder3d:
+3D Viewer	com.microsoft.3dviewer:
+Action Center	ms-actioncenter:
+Alarms & Clock	ms-clock:
+Available Networks	ms-availablenetworks:
+Calculator	calculator:
+Calendar	outlookcal:
+Camera	microsoft.windows.camera:
+Candy Crush Soda Saga	candycrushsodasaga:
+Connect	ms-projection:
+Cortana	ms-cortana:
+Cortana Connected Services	ms-cortana://notebook/?ConnectedServices
+Cortana Personal Information	ms-cortana://settings/ManageBingProfile
+Device Discovery	ms-settings-connectabledevices:devicediscovery
+Drawboard PDF	drawboardpdf:
+Facebook	fb:
+Feedback Hub	feedback-hub:
+Get Help	ms-contact-support:
+Groove Music	mswindowsmusic:
+Mail	outlookmail:
+Maps	bingmaps:
+ms-drive-to:
+ms-walk-to:
+Messaging	ms-chat:
+Microsoft Edge	microsoft-edge:
+Microsoft News	bingnews:
+Microsoft Solitaire Collection	xboxliveapp-1297287741:
+Microsoft Store	ms-windows-store:
+Microsoft Store – Music	microsoftmusic:
+Microsoft Store – Movies & TV	microsoftvideo:
+Microsoft Whiteboard	ms-whiteboard-cmd:
+Minecraft: Windows 10 Edition	minecraft:
+Mixed Reality Camera	ms-holocamera:
+Mixed Reality Portal	ms-holographicfirstrun:
+Movies & TV	mswindowsvideo:
+Networks	ms-availablenetworks:
+OneNote	onenote:
+Paint 3D	ms-paint:
+People	ms-people:​_​_
+People – Settings	ms-people:settings
+Photos	ms-photos:
+Project Display	ms-settings-displays-topology:projection
+Screen Snip	ms-screenclip:
+Settings	ms-settings:
+Snip & Sketch	ms-ScreenSketch:
+Tips	ms-get-started:
+Twitter	twitter:
+Weather	bingweather: OR msnweather:
+Windows Mixed Reality Environments	ms-environment-builder:
+Windows Parental Controls	ms-wpc:
+Windows Security	windowsdefender:
+Xbox	xbox:
+Xbox – Friends list	​_xbox-friendfinder:
+Xbox – Profile page	xbox-profile:
+Xbox – Network settings	xbox-network:
+Xbox – Settings	xbox-settings:​_
+Xbox One SmartGlass	smartglass:
