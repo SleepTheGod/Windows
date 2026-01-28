@@ -1,0 +1,36 @@
+# Define the path to the System Drive (typically C:)
+$systemDrive = "C:"
+
+# Stop the System Protection service to prevent interference with the restore process
+$systemProtectionService = Get-Service -Name "SysProtect"
+Stop-Service -Service $systemProtectionService
+
+# Check if a system restore point exists
+$restorePoints = Get-WmiObject Win32_SystemRestore -ComputerName "." | Where-Object {$_.Type -eq "1"}
+
+if ($restorePoints.Count -eq 0) {
+    Write-Error "No system restore points found. Cannot restore system drive to original state."
+    exit 1
+}
+
+# Select the most recent system restore point
+$latestRestorePoint = $restorePoints | Sort-Object CreationDate -Descending | Select-Object -First 1
+
+# Confirm with the user before proceeding with the restore
+$proceed = Read-Host "WARNING: This will restore your system drive to its original state, losing any changes made since the restore point. Are you sure you want to continue? (Y/N)"
+if ($proceed -eq "Y") {
+    # Perform the system restore
+    Start-WmiObject Win32_SystemRestore -Action Restore -RestorePoint $latestRestorePoint.RestorePointIdentifier
+
+    # Wait for the system restore to complete
+    while (Get-Process -Name "System Restore") {
+        Start-Sleep -Seconds 5
+    }
+
+    # Restart the System Protection service
+    Start-Service -Service $systemProtectionService
+
+    Write-Host "System drive restored to original state successfully."
+} else {
+    Write-Host "System drive restore canceled."
+}
